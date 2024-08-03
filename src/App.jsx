@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Description from "./components/Description/Description.jsx";
 import Options from "./components/Options/Options.jsx";
 import Feedback from "./components/Feedback/Feedback.jsx";
+import Notification from "./components/Notification/Notification.jsx";
 
 const DEFAULT_FEEDBACK = {
   good: 0,
@@ -45,7 +46,7 @@ function App() {
           positiveFeedback={positiveFeedback}
         />
       ) : (
-        <div>No feedback yet</div>
+        <Notification />
       )}
     </>
   );
